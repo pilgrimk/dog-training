@@ -10,7 +10,7 @@ import {
     AboutUsWrapper
 } from './AboutUsElements'
 
-const Music = () => {
+const AboutUs = () => {
     return (
         <>
             <AboutUsContainer id='about-us'>
@@ -24,4 +24,4 @@ const Music = () => {
     )
 }
 
-export default Music
+export default AboutUs
