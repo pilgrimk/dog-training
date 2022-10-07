@@ -1,13 +1,19 @@
+import React from 'react'
+import { Navbar } from './components'
+import { Home, Info, About, Events, Footer} from './container'
 import './App.css'
-import { BrowserRouter as Router } from 'react-router-dom';
-import Home from './pages';
 
-function App() {
+const App = () => {
   return (
-    <Router>
+    <div>
+      <Navbar />
       <Home />
-    </Router>
-  );
+      <Info />
+      <Events />
+      <About />
+      <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,19 @@
+.app__events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.app__events-container {
+    background: var(--color-light-tan);
+    max-width: 900px;
+    color: var(--color-black)
+}
+
+.app__events-container h1,
+.app__events-container p {
+    margin: 20px;
+}

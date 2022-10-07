@@ -1,0 +1,20 @@
+.app__info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.app__info-container {
+    max-width: 900px;
+}
+
+.app__info-container_item {
+    margin: 40px 0;
+    background-color: var(--color-dark-tan);
+}
+
+.app__info-container_item:nth-child(2) {
+    background-color: var(--color-light-tan);
+}

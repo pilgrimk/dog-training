@@ -1,0 +1,19 @@
+.app__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.app__about-container {
+    background: var(--color-light-tan);
+    max-width: 900px;
+    color: var(--color-black)
+}
+
+.app__about-container h1,
+.app__about-container p {
+    margin: 20px;
+}
