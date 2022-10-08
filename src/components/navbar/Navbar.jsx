@@ -73,11 +73,56 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <ul className='app__navbar-smallscreen_links'>
-              <li className='p__opensans'><a href='#home' onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li className='p__opensans'><a href='#info' onClick={() => setToggleMenu(false)}>Info</a></li>
-              <li className='p__opensans'><a href='#events' onClick={() => setToggleMenu(false)}>Events</a></li>
-              <li className='p__opensans'><a href='#about' onClick={() => setToggleMenu(false)}>About</a></li>
-              <li className='p__opensans'><a href='#contact' onClick={() => setToggleMenu(false)}>Contact</a></li>
+              <LinkS
+                className='app__navbar-smallscreen_link_items'
+                to='home'
+                smooth={true}
+                duration={500}
+                exact='true'
+                onClick={() => setToggleMenu(false)}
+              >
+                Home
+              </LinkS>
+              <LinkS
+                className='app__navbar-smallscreen_link_items'
+                to='info'
+                smooth={true}
+                duration={500}
+                exact='true'
+                onClick={() => setToggleMenu(false)}
+              >
+                Info
+              </LinkS>
+              <LinkS
+                className='app__navbar-smallscreen_link_items'
+                to='events'
+                smooth={true}
+                duration={500}
+                exact='true'
+                onClick={() => setToggleMenu(false)}
+              >
+                Events
+              </LinkS>
+              <LinkS
+                className='app__navbar-smallscreen_link_items'
+                to='about'
+                smooth={true}
+                duration={500}
+                exact='true'
+                onClick={() => setToggleMenu(false)}
+              >
+                About
+              </LinkS>
+              <LinkS
+                className='app__navbar-smallscreen_link_items'
+                to='contact'
+                smooth={true}
+                duration={500}
+                exact='true'
+                onClick={() => setToggleMenu(false)}
+              >
+                Contact Us
+              </LinkS>
             </ul>
           </div>
         )}
