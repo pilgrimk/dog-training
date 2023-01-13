@@ -66,7 +66,7 @@ const Navbar = () => {
         </LinkS>
         <LinkS
           className='p__opensans app__navbar-link_item'
-          to='events'          
+          to='events'
           onClick={() => handleScroll('events')}
         >
           Events
@@ -107,34 +107,38 @@ const Navbar = () => {
               >
                 Home
               </LinkS>
-              <LinkS
-                className='app__navbar-smallscreen_link_items'
-                to='info'
-                onClick={() => handleScroll('info')}
-              >
-                Info
-              </LinkS>
-              <LinkS
-                className='app__navbar-smallscreen_link_items'
-                to='events'
-                onClick={() => handleScroll('events')}
-              >
-                Events
-              </LinkS>
-              <LinkS
-                className='app__navbar-smallscreen_link_items'
-                to='about'
-                onClick={() => handleScroll('about')}
-              >
-                About
-              </LinkS>
-              <LinkS
-                className='app__navbar-smallscreen_link_items'
-                to='contact'
-                onClick={() => handleScroll('contact')}
-              >
-                Contact Us
-              </LinkS>
+              {(location === 'home') &&
+                <React.Fragment>
+                  <LinkS
+                    className='app__navbar-smallscreen_link_items'
+                    to='info'
+                    onClick={() => handleScroll('info')}
+                  >
+                    Info
+                  </LinkS>
+                  <LinkS
+                    className='app__navbar-smallscreen_link_items'
+                    to='events'
+                    onClick={() => handleScroll('events')}
+                  >
+                    Events
+                  </LinkS>
+                  <LinkS
+                    className='app__navbar-smallscreen_link_items'
+                    to='about'
+                    onClick={() => handleScroll('about')}
+                  >
+                    About
+                  </LinkS>
+                  <LinkS
+                    className='app__navbar-smallscreen_link_items'
+                    to='contact'
+                    onClick={() => handleScroll('contact')}
+                  >
+                    Contact Us
+                  </LinkS>
+                </React.Fragment>
+              }
             </ul>
           </div>
         )}

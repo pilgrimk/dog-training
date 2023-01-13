@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import { HeroSection, Info, About, Events} from '../index'
+import { HeroSection, Info, About, Events, Footer} from '../index'
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
         <Info />
         <Events />
         <About />
+        <Footer />
     </div>
   )
 }

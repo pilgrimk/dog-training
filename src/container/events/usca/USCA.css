@@ -1,8 +1,47 @@
-.app-usca{
+.app__usca{
     /* account for Navbar */
     position: relative;
     top: 80px;
-
-    height: 100vh;
-    color: blueviolet;
+    padding: 2rem 2rem;
 }
+
+.app__usca__main_info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+.app__usca-logo-container {
+    width: 450px;
+    margin: 5px;
+}
+
+.app__usca-logo{
+    max-width: 100%;
+}
+
+.app__usca-content-container {
+    width: 100%;
+    margin: 5px;
+}
+
+.app__eventdetail_title_text {
+    color: var(--color-cyan);
+    text-decoration: underline;
+}
+
+.app__eventdetail_data {
+    padding: 0 0 0 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .app__usca__main_info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app__usca-logo-container {
+        width: 100%;
+    }
+  }
