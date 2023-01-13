@@ -17,3 +17,28 @@
 .app__events-container p {
     margin: 20px;
 }
+
+.app__events_event-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.app__events_event-card img {
+    width: 60px;
+    height: 50px;
+    margin: 0 1rem 1rem 0;
+}
+
+.app__events_event-card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.app__events_event-card_content_link {
+    color: blue;
+}

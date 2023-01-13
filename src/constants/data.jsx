@@ -1,6 +1,7 @@
 import images from './images';
 
-const infoObjOne = {
+const infoObjs = [
+  {
     id: 'info-1',
     topLine: 'First Section Title',
     headline: 'First Section Headline',
@@ -10,9 +11,8 @@ const infoObjOne = {
     imgUrl: images.photo01,
     alt: 'dog-1',
     reverse: 'false'
-  };
-  
-const infoObjTwo = {
+  },
+  {
     id: 'info-2',
     topLine: 'Second Section Title',
     headline: 'Second Section Headline',
@@ -22,9 +22,8 @@ const infoObjTwo = {
     imgUrl: images.photo02,
     alt: 'dog-2',
     reverse: 'true'
-  };
-  
-const infoObjThree = {
+  },
+  {
     id: 'info-3',
     topLine: 'Third Section Title',
     headline: 'Third Section Headline',
@@ -34,13 +33,28 @@ const infoObjThree = {
     imgUrl: images.photo03,
     alt: 'dog-3',
     reverse: 'false'
-  };
+  }
+];
 
-const data = [
-    infoObjOne,
-    infoObjTwo,
-    infoObjThree
-  ];
+const events = [
+  {
+    id: 'event-1',
+    title: 'USCA Southeast Regional Championship',
+    dates: 'March 2-5, 2023',
+    linkURL: '/usca',
+    imgURL: images.uscalogo
+  },
+  {
+    id: 'event-2',
+    title: 'Some Other Upcoming Event',
+    dates: 'May 2-5, 2023',
+    imgURL: images.defaultImg
+  }
+];
 
-  export default data;
-  
+const data = {
+  infoObjs,
+  events
+};
+
+export default data;

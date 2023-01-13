@@ -2,59 +2,86 @@ import React, { useState } from 'react'
 import { Link as LinkS } from 'react-scroll';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { BiBone } from 'react-icons/bi'
+import { useLocation, useNavigate } from 'react-router-dom'
+import * as Scroll from 'react-scroll';
 import './Navbar.css'
 
 const Navbar = () => {
+  const path = useLocation().pathname;
+  const location = path.split('/')[1];
+  const navigate = useNavigate();
+  const scroller = Scroll.scroller;
+
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const scrollToAnchor = (anchor) => {
+    //console.log(`scrollToAnchor, anchor: ${anchor}`);
+    scroller.scrollTo(anchor, {
+      duration: 500,
+      smooth: true,
+      exact: true
+    });
+  };
+
+  const goToHomeAndScroll = async (anchor) => {
+    //console.log(`goToHomeAndScroll, anchor: ${anchor}`);
+    navigate('/home');
+    // ** scroll functionality NOT working **
+    // scroller.scrollTo(anchor, {
+    //   duration: 500,
+    //   smooth: true,
+    //   exact: true
+    // });
+  };
+
+  const handleScroll = (anchor) => {
+    setToggleMenu(false);
+    if (location === 'home') {
+      scrollToAnchor(anchor);
+    }
+    else {
+      goToHomeAndScroll(anchor);
+    }
+  }
 
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <p className='app__navbar-logo_title'>Dog Training</p>
+        <p className='app__navbar-logo_title'>NBSC</p>
       </div>
       <ul className='app__navbar-links'>
         <LinkS
           className='p__opensans app__navbar-link_item'
-          to='home'
-          smooth={true}
-          duration={500}
-          exact='true'
+          to='hero'
+          onClick={() => handleScroll('hero')}
         >
           Home
         </LinkS>
         <LinkS
           className='p__opensans app__navbar-link_item'
           to='info'
-          smooth={true}
-          duration={500}
-          exact='true'
+          onClick={() => handleScroll('info')}
         >
           Info
         </LinkS>
         <LinkS
           className='p__opensans app__navbar-link_item'
-          to='events'
-          smooth={true}
-          duration={500}
-          exact='true'
+          to='events'          
+          onClick={() => handleScroll('events')}
         >
           Events
         </LinkS>
         <LinkS
           className='p__opensans app__navbar-link_item'
           to='about'
-          smooth={true}
-          duration={500}
-          exact='true'
+          onClick={() => handleScroll('about')}
         >
           About
         </LinkS>
         <LinkS
           className='p__opensans app__navbar-link_item'
           to='contact'
-          smooth={true}
-          duration={500}
-          exact='true'
+          onClick={() => handleScroll('contact')}
         >
           Contact
         </LinkS>
@@ -75,51 +102,36 @@ const Navbar = () => {
             <ul className='app__navbar-smallscreen_links'>
               <LinkS
                 className='app__navbar-smallscreen_link_items'
-                to='home'
-                smooth={true}
-                duration={500}
-                exact='true'
-                onClick={() => setToggleMenu(false)}
+                to='hero'
+                onClick={() => handleScroll('hero')}
               >
                 Home
               </LinkS>
               <LinkS
                 className='app__navbar-smallscreen_link_items'
                 to='info'
-                smooth={true}
-                duration={500}
-                exact='true'
-                onClick={() => setToggleMenu(false)}
+                onClick={() => handleScroll('info')}
               >
                 Info
               </LinkS>
               <LinkS
                 className='app__navbar-smallscreen_link_items'
                 to='events'
-                smooth={true}
-                duration={500}
-                exact='true'
-                onClick={() => setToggleMenu(false)}
+                onClick={() => handleScroll('events')}
               >
                 Events
               </LinkS>
               <LinkS
                 className='app__navbar-smallscreen_link_items'
                 to='about'
-                smooth={true}
-                duration={500}
-                exact='true'
-                onClick={() => setToggleMenu(false)}
+                onClick={() => handleScroll('about')}
               >
                 About
               </LinkS>
               <LinkS
                 className='app__navbar-smallscreen_link_items'
                 to='contact'
-                smooth={true}
-                duration={500}
-                exact='true'
-                onClick={() => setToggleMenu(false)}
+                onClick={() => handleScroll('contact')}
               >
                 Contact Us
               </LinkS>

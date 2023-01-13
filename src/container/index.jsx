@@ -3,11 +3,15 @@ import Events from './events/Events'
 import Footer from './footer/Footer'
 import Home from './home/Home'
 import Info from './info/Info'
+import HeroSection from './herosection/HeroSection'
+import USCA from './events/usca/USCA'
 
 export {
   About,
   Events,
   Footer,
   Home,
-  Info
+  Info,
+  HeroSection,
+  USCA
 };
