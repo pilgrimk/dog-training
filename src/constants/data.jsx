@@ -3,10 +3,10 @@ import images from './images';
 const infoObjs = [
   {
     id: 'info-1',
-    topLine: 'First Section Title',
-    headline: 'First Section Headline',
+    topLine: 'Why consider dog training?',
+    headline: 'The Many Benefits of Training',
     description:
-      'My baby distillery shoreditch vexillologist microdosing artisan mustache, salvia brooklyn williamsburg church-key waistcoat prism pug. Chicharrones kogi actually authentic letterpress, prism vexillologist wolf semiotics small batch freegan photo booth scenester. IPhone artisan mustache schlitz banh mi wolf, waistcoat cloud bread shabby chic fanny pack kale chips vice selvage. Banjo live-edge brooklyn hexagon whatever, yr franzen ennui DSA taxidermy paleo',
+      'The benefits of dog training are numerous and varied. Training your dog can help to improve your relationship with your furry friend, reduce behaviors that are disruptive or dangerous, and make your life easier.',
     buttonLabel: 'Get Started',
     imgUrl: images.photo01,
     alt: 'dog-1',
@@ -14,10 +14,10 @@ const infoObjs = [
   },
   {
     id: 'info-2',
-    topLine: 'Second Section Title',
-    headline: 'Second Section Headline',
+    topLine: '',
+    headline: 'Strengthened Bonding',
     description:
-      'Farm-to-table raclette tumeric artisan meggings locavore. Hot chicken af tilde, unicorn shabby chic cornhole lomo PBR&B banjo. Banh mi tonx hammock stumptown tousled freegan salvia pickled heirloom photo booth before they sold out cloud bread blue bottle chicharrones church-key. Marfa drinking vinegar farm-to-table cold-pressed gentrify.',
+      'One of the most important benefits of dog training is that it helps to strengthen the bond between you and your pup. Training provides an opportunity for you to establish leadership and create a strong trust-based relationship. This can result in your dog being more willing to obey commands, follow directions, and be more reliable in different situations.',
     buttonLabel: 'Learn More',
     imgUrl: images.photo02,
     alt: 'dog-2',
@@ -25,32 +25,45 @@ const infoObjs = [
   },
   {
     id: 'info-3',
-    topLine: 'Third Section Title',
-    headline: 'Third Section Headline',
+    topLine: '',
+    headline: 'Reduce Bad Behavior',
     description:
-      "Normcore shoreditch roof party, cred kinfolk coloring book direct trade quinoa tote bag keffiyeh keytar. Selfies gastropub yr godard knausgaard vice microdosing celiac organic truffaut portland. Messenger bag fam quinoa biodiesel williamsburg adaptogen. Normcore photo booth drinking vinegar, ramps selvage put a bird on it slow-carb waistcoat sartorial pok pok distillery flexitarian enamel pin mustache. Art party hella vegan pitchfork seitan blue bottle, readymade everyday carry post-ironic tilde pork belly keffiyeh shabby chic narwhal.",
+      "In addition to improving the relationship between you and your dog, dog training can also help to reduce or eliminate behaviors that are disruptive or dangerous. By teaching your dog commands such as 'sit', 'stay', and 'leave it', you can help to reduce behaviors such as barking, jumping, or running away. Training can also help to prevent your dog from engaging in other dangerous behaviors, such as chewing on furniture or escaping outdoors.",
     buttonLabel: 'Start Now',
     imgUrl: images.photo03,
     alt: 'dog-3',
     reverse: 'false'
+  },
+  {
+    id: 'info-4',
+    topLine: '',
+    headline: 'Make Life Easier',
+    description:
+      "Finally, dog training can make your life easier. After your pup has learned basic commands, daily tasks such as grooming, walking, and playing can become much more enjoyable. Training can also help to make your pup more reliable in different situations.",
+    buttonLabel: 'Start Now',
+    imgUrl: images.photo04,
+    alt: 'dog-4',
+    reverse: 'false'
   }
 ];
 
-const events = [
+const aboutUs = {
+  title: 'About Us',
+  desc: "North Beach Schuzthund Club is the perfect place for anyone interested in learning how to train their dog. The club provides a supportive and friendly environment for both owners and their dogs. We offer a variety of classes and activities such as basic obedience, agility, tricks, and more. Our trainers are knowledgeable and experienced, and we make sure to tailor the program to meet the individual needs of each dog and owner. We also provide helpful tips and advice on how to best care for your dog and how to develop a strong bond between you and your pet. The NBSC is a great place to start if you are looking to train your pup!"
+}
+
+const events = {
+  title: 'Upcoming Events',
+  desc: "Here's a table of our upcoming competitions and sponsored events.  We host a number of these events throughout the year so check in regularly to stay informed.",
+  data: [
   {
     id: 'event-1',
     title: 'USCA Southeast Regional Championship',
     dates: 'March 2-5, 2023',
     linkURL: '/usca',
     imgURL: images.uscalogo
-  },
-  {
-    id: 'event-2',
-    title: 'Some Other Upcoming Event',
-    dates: 'May 2-5, 2023',
-    imgURL: images.defaultImg
   }
-];
+]};
 
 const uscaData = { 
   mainInfo: {
@@ -150,6 +163,7 @@ const uscaData = {
 
 const data = {
   infoObjs,
+  aboutUs,
   events,
   uscaData
 };

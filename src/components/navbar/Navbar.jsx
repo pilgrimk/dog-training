@@ -15,7 +15,6 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const scrollToAnchor = (anchor) => {
-    //console.log(`scrollToAnchor, anchor: ${anchor}`);
     scroller.scrollTo(anchor, {
       duration: 500,
       smooth: true,
@@ -24,14 +23,9 @@ const Navbar = () => {
   };
 
   const goToHomeAndScroll = async (anchor) => {
-    //console.log(`goToHomeAndScroll, anchor: ${anchor}`);
+    //scroll to anchor is not working !!
     navigate('/home');
-    // ** scroll functionality NOT working **
-    // scroller.scrollTo(anchor, {
-    //   duration: 500,
-    //   smooth: true,
-    //   exact: true
-    // });
+    //scrollToAnchor(anchor);
   };
 
   const handleScroll = (anchor) => {
@@ -57,34 +51,38 @@ const Navbar = () => {
         >
           Home
         </LinkS>
-        <LinkS
-          className='p__opensans app__navbar-link_item'
-          to='info'
-          onClick={() => handleScroll('info')}
-        >
-          Info
-        </LinkS>
-        <LinkS
-          className='p__opensans app__navbar-link_item'
-          to='events'
-          onClick={() => handleScroll('events')}
-        >
-          Events
-        </LinkS>
-        <LinkS
-          className='p__opensans app__navbar-link_item'
-          to='about'
-          onClick={() => handleScroll('about')}
-        >
-          About
-        </LinkS>
-        <LinkS
-          className='p__opensans app__navbar-link_item'
-          to='contact'
-          onClick={() => handleScroll('contact')}
-        >
-          Contact
-        </LinkS>
+        {(location === 'home') &&
+          <React.Fragment>
+            <LinkS
+              className='p__opensans app__navbar-link_item'
+              to='info'
+              onClick={() => handleScroll('info')}
+            >
+              Info
+            </LinkS>
+            <LinkS
+              className='p__opensans app__navbar-link_item'
+              to='events'
+              onClick={() => handleScroll('events')}
+            >
+              Events
+            </LinkS>
+            <LinkS
+              className='p__opensans app__navbar-link_item'
+              to='about'
+              onClick={() => handleScroll('about')}
+            >
+              About
+            </LinkS>
+            <LinkS
+              className='p__opensans app__navbar-link_item'
+              to='contact'
+              onClick={() => handleScroll('contact')}
+            >
+              Contact
+            </LinkS>
+          </React.Fragment>
+        }
       </ul>
       <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu

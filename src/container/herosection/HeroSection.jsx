@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className='app__hero app__bg flex__center' id='hero'>
       <div className='app__hero-video'>
-        <video 
+        <video
           src={dogsPlaying}
           type='video/mp4'
           controls={false}
@@ -15,6 +15,9 @@ const HeroSection = () => {
           loop
           muted
         />
+        <div className='app__hero-overlay'>
+          <p>North Beach Schuzthund Club</p>
+        </div>
       </div>
     </div>
   )
