@@ -1,28 +1,26 @@
 .app__usca{
     /* account for Navbar */
-    position: relative;
     top: 80px;
+
+    position: relative;
     padding: 2rem 2rem;
 }
 
-.app__usca__main_info {
+.app__eventdetail_event-card{
     display: flex;
     flex-direction: row;
-    width: 100%;
-  }
-
-.app__usca-logo-container {
-    width: 450px;
-    margin: 5px;
 }
 
-.app__usca-logo{
-    max-width: 100%;
+.app__eventdetail_image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.app__usca-content-container {
-    width: 100%;
-    margin: 5px;
+.app__eventdetail_image{
+    width: 200px;
+    padding: 10px;
 }
 
 .app__eventdetail_title_text {
@@ -34,14 +32,17 @@
     padding: 0 0 0 20px;
 }
 
+.app__eventdetail_link_text{
+    color: blue;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 650px) {
-    .app__usca__main_info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .app__eventdetail_event-card{
+        flex-direction: column;
     }
 
-    .app__usca-logo-container {
-        width: 100%;
+    .app__eventdetail_image-container{
+        flex-direction: row;
     }
-  }
+}

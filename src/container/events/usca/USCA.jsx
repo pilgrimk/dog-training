@@ -3,7 +3,6 @@ import { Grid, Paper, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import shortid from 'shortid'
 import data from '../../../constants/data'
-import images from '../../../constants/images'
 import './USCA.css'
 
 const USCA = () => {
@@ -16,24 +15,54 @@ const USCA = () => {
     color: theme.palette.text.secondary,
   }));
 
-  const EventDetailCard = ({ event: { title, data } }) => (
+  const EventDetailCard = ({ event }) => (
     <div className='app__eventdetail_event-card'>
-      <div className='app__eventdetail_title'>
-        <Typography
-          className='app__eventdetail_title_text'
-        >
-          {title}
-        </Typography>
-      </div>
-      <div className='app__eventdetail_data'>
-        {data.map((item) =>
+      {(event.imgURLs) &&
+        <div className='app__eventdetail_image-container'>
+          {event.imgURLs.map((image) =>
+            <img
+              key={shortid.generate()}
+              className='app__eventdetail_image'
+              src={image}
+              alt='img' />
+          )}
+        </div>
+      }
+      <div className='app__eventdetail_content'>
+        <div className='app__eventdetail_title'>
           <Typography
-            key={shortid.generate()}
-            className='app__eventdetail_data_text'
+            className='app__eventdetail_title_text'
           >
-            {item}
+            {event.title}
           </Typography>
-        )}
+        </div>
+        {(event.data) &&
+          <div className='app__eventdetail_data'>
+            {event.data.map((item) =>
+              <Typography
+                key={shortid.generate()}
+                className='app__eventdetail_data_text'
+              >
+                {item}
+              </Typography>
+            )}
+          </div>
+        }
+        {(event.links) &&
+          <div className='app__eventdetail_data'>
+            {event.links.map((link) =>
+              <p key={shortid.generate()}>
+                {link.desc}
+                <a className='app__eventdetail_link_text'
+                  href={link.href}
+                  rel={link.rel}
+                  target={link.target}
+                >{link.text}
+                </a>
+              </p>
+            )}
+          </div>
+        }
       </div>
     </div>
   );
@@ -45,18 +74,11 @@ const USCA = () => {
   return (
     <div className='app__usca app__bg'>
       <Grid container spacing={2}>
-        <div container className='app__usca__main_info'>
-          <div className='app__usca-logo-container'>
-            <Item>
-              <img className='app__usca-logo' src={images.uscalogo} alt='logo' />
-            </Item>
-          </div>
-          <div className='app__usca-content-container'>
-            <Item>
-              <EventDetailCard event={data.uscaData.mainInfo} />
-            </Item>
-          </div>
-        </div>
+        <Grid item xs={12}>
+          <Item>
+            <EventDetailCard event={data.uscaData.mainInfo} />
+          </Item>
+        </Grid>
         <Grid item xs={12}>
           <Item>
             <EventDetailCard event={data.uscaData.competitors} />
@@ -85,6 +107,11 @@ const USCA = () => {
         <Grid item xs={12}>
           <Item>
             <EventDetailCard event={data.uscaData.hotelLodging} />
+          </Item>
+        </Grid>
+        <Grid item xs={12}>
+          <Item>
+            <EventDetailCard event={data.uscaData.application} />
           </Item>
         </Grid>
         <Grid item xs={12}>

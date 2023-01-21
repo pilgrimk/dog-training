@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Link as LinkS } from 'react-scroll';
+import { Link as LinkS } from 'react-scroll'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { BiBone } from 'react-icons/bi'
 import { useLocation, useNavigate } from 'react-router-dom'
-import * as Scroll from 'react-scroll';
+import * as Scroll from 'react-scroll'
+import data from '../../constants/data'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -41,7 +42,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <p className='app__navbar-logo_title'>NBSC</p>
+        <p className='app__navbar-logo_title'>{data.contactUs.name_short}</p>
       </div>
       <ul className='app__navbar-links'>
         <LinkS

@@ -1,6 +1,6 @@
 import React from 'react'
 import './HeroSection.css'
-import { dogsPlaying } from '../../constants'
+import { data, dogsPlaying } from '../../constants'
 
 const HeroSection = () => {
   return (
@@ -16,7 +16,7 @@ const HeroSection = () => {
           muted
         />
         <div className='app__hero-overlay'>
-          <p>North Beach Schuzthund Club</p>
+          <p>{data.contactUs.name_long}</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi'
+import data from '../../constants/data'
 import './Footer.css'
 
 const Footer = () => {
@@ -7,10 +8,10 @@ const Footer = () => {
     <div className='app__footer section__padding' id='contact'>
       <div className='app__footer-links'>
         <div className='app__footer-links_contact'>
-          <h1 className="app__footer-headtext">Contact Us</h1>
-          <p className="p__opensans">123 Main Street, Yourtown, SC 12345, USA</p>
-          <p className="p__opensans">+1 212-345-6478</p>
-          <p className="p__opensans">+1 212-456-7890</p>
+          <h1 className="app__footer-headtext">{data.contactUs.title_cu}</h1>
+          <p className="p__opensans">{data.contactUs.addr}, {data.contactUs.city}, {data.contactUs.state_short} {data.contactUs.postal_code}, {data.contactUs.country}</p>
+          <p className="p__opensans">{data.contactUs.phone_1}</p>
+          <p className="p__opensans">{data.contactUs.phone_2}</p>
         </div>
 
         <div className='app__footer-links_logo'>
@@ -22,15 +23,15 @@ const Footer = () => {
         </div>
 
         <div className='app__footer-links_work'>
-          <h1 className='app__footer-headtext'>Working Hours</h1>
-          <p className='p__opensans'>Monday-Friday:</p>
-          <p className='p__opensans'>08:00 am - 12:00 am</p>
-          <p className='p__opensans'>Saturday-Sunday:</p>
-          <p className='p__opensans'>07:00 am - 11:00 pm</p>
+          <h1 className='app__footer-headtext'>{data.contactUs.title_wh}</h1>
+          <p className='p__opensans'>{data.contactUs.days_1}</p>
+          <p className='p__opensans'>{data.contactUs.hours_1}</p>
+          <p className='p__opensans'>{data.contactUs.days_2}</p>
+          <p className='p__opensans'>{data.contactUs.hours_2}</p>
         </div>
       </div>
       <div className='footer__copyright'>
-        <p className='p__opensans'>2022 Dog Training. All Rights Reserved</p>
+        <p className='p__opensans'>2022 {data.contactUs.name_short}. All Rights Reserved</p>
       </div>
     </div>
   )

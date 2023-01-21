@@ -18,7 +18,12 @@
     margin: 20px;
 }
 
-.app__events_event-card{
+.app_events__card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__events_event-card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,8 +31,8 @@
 }
 
 .app__events_event-card img {
-    width: 60px;
-    height: 50px;
+    width: 200px;
+    height: auto;
     margin: 0 1rem 1rem 0;
 }
 
@@ -35,10 +40,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
     width: 100%;
 }
 
 .app__events_event-card_content_link {
     color: blue;
+    margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 650px) {
+    .app__events_event-card img {
+        width: 80px;
+    }
 }

@@ -26,9 +26,11 @@ const Events = () => {
       <div className='app__events-container'>
         <h1 className='headtext__neuton'>{data.events.title}</h1>
         <p className='p__opensans'>{data.events.desc}</p>
-        {data.events.data.map((event) =>
-          <EventCard event={event} key={event.id} />
-        )}
+        <div className='app_events__card-container'>
+          {data.events.data.map((event) =>
+            <EventCard event={event} key={event.id} />
+          )}
+        </div>
       </div>
     </div>
   )

@@ -68,6 +68,9 @@ const events = {
 const uscaData = { 
   mainInfo: {
     title: 'USCA SOUTHEAST REGIONAL CHAMPIONSHIP',
+    imgURLs: [
+      images.uscalogo
+    ],     
     data: [
     'Hosted by: North Beach Schuzthund Club',
     'Judges: Bob Johantgen (stadium) & Nikki Banfield (tracking)',
@@ -81,6 +84,10 @@ const uscaData = {
   ]}, 
   trialField: {
     title: 'Trial Field',
+    imgURLs: [
+      images.arial01,
+      images.arial02
+    ],   
     data: [
     'Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527',
     'BH Schedule: Friday March 3 @ 9am - NBSC Field 9170 Hwy 90 Longs, SC 29568',
@@ -115,9 +122,23 @@ const uscaData = {
   ]},
   application: {
     title: 'Application',
-    onlineURL: 'https://form.jotform.com/223207097316049',
-    writtenURL: 'https://www.dropbox.com/s/97odqb1ppkpk3al/Entry%20Form%20SE%20Regionals%202023.pdf?dl=0'
-  },
+    links: [
+      {
+        text: 'Online',
+        desc: 'Click the following link to complete the online application: ',
+        href: 'https://form.jotform.com/223207097316049',
+        rel: 'noreferrer',
+        target: '_blank'
+      },
+      {
+        text: 'Written',
+        desc: 'Click the following link to complete the written application: ',
+        href: 'https://www.dropbox.com/s/97odqb1ppkpk3al/Entry%20Form%20SE%20Regionals%202023.pdf?dl=0',
+        rel: 'noreferrer',
+        target: '_blank'
+      }      
+    ],
+},
   sponsorsVendors: {
     title: 'Sponsors/Vendors',
     data: [
@@ -159,13 +180,33 @@ const uscaData = {
     'North Beach Schutzhund Club',
     'jrchaires23@gmail.com'
   ]}
-}
+};
+
+const contactUs = {
+  title_cu: 'Contact Us',
+  name_long: 'North Beach Schuzthund Club',
+  name_short: 'NBSC',
+  addr: "123 Main Street",
+  city: 'Yourtown',
+  state_long: 'South Carolina',
+  state_short: 'SC',
+  postal_code: '12345',
+  country: 'USA',
+  phone_1: '212-345-6478',
+  phone_2: '212-456-7890',
+  title_wh: 'Working Hours',
+  days_1: 'Monday-Friday:',
+  hours_1: '08:00 am - 12:00 am',
+  days_2: 'Saturday-Sunday:',
+  hours_2: '07:00 am - 11:00 pm'
+};
 
 const data = {
   infoObjs,
   aboutUs,
   events,
-  uscaData
+  uscaData,
+  contactUs
 };
 
 export default data;
