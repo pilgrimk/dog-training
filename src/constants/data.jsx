@@ -68,9 +68,9 @@ const events = {
 const uscaData = { 
   mainInfo: {
     title: 'USCA SOUTHEAST REGIONAL CHAMPIONSHIP',
-    imgURLs: [
+    images: [
       images.uscalogo
-    ],     
+    ], 
     data: [
     'Hosted by: North Beach Schuzthund Club',
     'Judges: Bob Johantgen (stadium) & Nikki Banfield (tracking)',
@@ -84,19 +84,16 @@ const uscaData = {
   ]}, 
   trialField: {
     title: 'Trial Field',
-    imgURLs: [
+    images: [
       images.arial01,
       images.arial02
-    ],   
+    ],
+    scrollImages: 'true',   
     data: [
     'Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527',
     'BH Schedule: Friday March 3 @ 9am - NBSC Field 9170 Hwy 90 Longs, SC 29568',
     'IGP Schedule: Sat/Sun March 4-5 @ 7am start (flights to be updated)'
   ]}, 
-  trialFieldImages: [
-    images.arial01,
-    images.arial02
-  ],
   drawNight: {
     title: 'Draw Night',
     data: [
@@ -198,7 +195,17 @@ const contactUs = {
   days_1: 'Monday-Friday:',
   hours_1: '08:00 am - 12:00 am',
   days_2: 'Saturday-Sunday:',
-  hours_2: '07:00 am - 11:00 pm'
+  hours_2: '07:00 am - 11:00 pm',
+  social_media: [
+    {
+        title: 'Facebook',
+        link: 'https://www.facebook.com/northbeachschutzhundclub/'
+    },
+    {
+        title: 'Instagram',
+        link: 'https://www.instagram.com/northbeachschutzhundclub/'
+    }
+]
 };
 
 const data = {

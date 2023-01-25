@@ -1,0 +1,116 @@
+.app__eventdetail_event-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.app__eventdetail-images{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 45%;
+    position: relative; 
+}
+
+.app__eventdetail-images-container{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+.app__eventdetail-images-container::-webkit-scrollbar {
+    display: none;
+}
+
+.app__eventdetail-images_card{
+    position: relative;
+    min-width: 301px;
+    height: 447px;
+    margin-right: 2rem;
+}
+
+.app__eventdetail-images_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+/* .app__eventdetail-images_card:hover img {
+    opacity: .35;
+} */
+
+.app__eventdetail-images_arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 5%;
+}
+
+.eventdetail__arrow-icon {
+    color: var(--color-white);
+    font-size: 2rem;
+    cursor: pointer;
+    background: var(--color-black);
+    border-radius: 5px;
+}
+
+.eventdetail__arrow-icon:hover {
+    color: var(--color-cyan);
+}
+
+.app__eventdetail_content{
+    padding: 0 0 0 10px;
+}
+
+.app__eventdetail_title_text {
+    color: var(--color-cyan);
+    text-decoration: underline;
+}
+
+.app__eventdetail_data {
+    padding: 0 0 0 20px;
+}
+
+.app__eventdetail_link_text{
+    color: blue;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__eventdetail-images_card {
+        min-width: 400px;
+        height: 547px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__eventdetail-images-container {
+        margin: 0 0 10px 0;
+    }
+
+    .app__eventdetail-images{
+        max-width: 100%;
+    }
+
+    .app__eventdetail_event-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app__eventdetail-images_card {
+        min-width: 240px;
+        height: 320px;
+    }
+
+    .app__eventdetail_content{
+        padding: 0;
+    }
+}

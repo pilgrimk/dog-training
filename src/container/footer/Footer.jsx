@@ -1,9 +1,27 @@
 import React from 'react'
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi'
+import { IconButton } from '@mui/material'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import shortid from 'shortid'
 import data from '../../constants/data'
 import './Footer.css'
 
 const Footer = () => {
+  const getLinkedIcon = (title) => {
+    switch (title) {
+      case 'Instagram':
+        return <InstagramIcon />;
+      case 'Twitter':
+        return <TwitterIcon />;
+      case 'LinkedIn':
+        return <LinkedInIcon />;
+      default:
+        return <FacebookIcon />;
+    }
+  };
+
   return (
     <div className='app__footer section__padding' id='contact'>
       <div className='app__footer-links'>
@@ -14,13 +32,20 @@ const Footer = () => {
           <p className="p__opensans">{data.contactUs.phone_2}</p>
         </div>
 
-        <div className='app__footer-links_logo'>
-          <div className='app__footer-links_icons'>
-            <FiFacebook />
-            <FiTwitter />
-            <FiInstagram />
+        {(data.contactUs.social_media) &&
+          <div className='app__footer-links_logo'>
+            <div className='app__footer-links_icons'>
+              {data.contactUs.social_media.map((media) => (
+                <IconButton
+                  key={shortid.generate()}
+                  aria-label={media.title}
+                  href={media.link}>
+                  {getLinkedIcon(media.title)}
+                </IconButton>
+              ))}
+            </div>
           </div>
-        </div>
+        }
 
         <div className='app__footer-links_work'>
           <h1 className='app__footer-headtext'>{data.contactUs.title_wh}</h1>
