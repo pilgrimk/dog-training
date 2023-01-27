@@ -3,10 +3,10 @@ import images from './images';
 const infoObjs = [
   {
     id: 'info-1',
-    topLine: 'Why consider dog training?',
-    headline: 'The Many Benefits of Training',
+    topLine: 'What is a sports dog club?',
+    headline: 'Sports Dog Club',
     description:
-      'The benefits of dog training are numerous and varied. Training your dog can help to improve your relationship with your furry friend, reduce behaviors that are disruptive or dangerous, and make your life easier.',
+      "Sports Dog Clubs are organizations that promote activities for dogs and their owners to participate in together. They often host competitions, such as agility trials and scent work trials, as well as offering classes and other activities. Many of these clubs also provide educational opportunities and support to their members. They are often a great way for dog owners to meet and socialize with other dog owners, as well as learn new skills and have fun with their dogs.",
     buttonLabel: 'Get Started',
     imgUrl: images.photo01,
     alt: 'dog-1',
@@ -15,9 +15,9 @@ const infoObjs = [
   {
     id: 'info-2',
     topLine: '',
-    headline: 'Strengthened Bonding',
+    headline: 'Benefit You And Your Dog',
     description:
-      'One of the most important benefits of dog training is that it helps to strengthen the bond between you and your pup. Training provides an opportunity for you to establish leadership and create a strong trust-based relationship. This can result in your dog being more willing to obey commands, follow directions, and be more reliable in different situations.',
+      "Joining a sports dog club can be beneficial for both you and your dog. It can provide an opportunity for you to learn new skills, make new friends, and stay active. It can also be a great way for you to bond with your dog and teach them new behaviors.",
     buttonLabel: 'Learn More',
     imgUrl: images.photo02,
     alt: 'dog-2',
@@ -26,9 +26,9 @@ const infoObjs = [
   {
     id: 'info-3',
     topLine: '',
-    headline: 'Reduce Bad Behavior',
+    headline: 'Great Exercise For You Both',
     description:
-      "In addition to improving the relationship between you and your dog, dog training can also help to reduce or eliminate behaviors that are disruptive or dangerous. By teaching your dog commands such as 'sit', 'stay', and 'leave it', you can help to reduce behaviors such as barking, jumping, or running away. Training can also help to prevent your dog from engaging in other dangerous behaviors, such as chewing on furniture or escaping outdoors.",
+      "Dog sports are a great way to get exercise and fresh air in a fun and exciting way. Many activities involve running, jumping, and agility drills that can be enjoyable for both you and your pup. It can be a great way to stay in shape while having fun with your pup.",
     buttonLabel: 'Start Now',
     imgUrl: images.photo03,
     alt: 'dog-3',
@@ -37,9 +37,9 @@ const infoObjs = [
   {
     id: 'info-4',
     topLine: '',
-    headline: 'Make Life Easier',
+    headline: 'Socialize Your Pup',
     description:
-      "Finally, dog training can make your life easier. After your pup has learned basic commands, daily tasks such as grooming, walking, and playing can become much more enjoyable. Training can also help to make your pup more reliable in different situations.",
+      "A sports dog club can also be a great way to socialize your pup. It can give them the opportunity to interact and play with other pups in a safe, controlled environment. This can help your pup learn how to play nicely with other pups and give them the confidence to interact with other animals.",
     buttonLabel: 'Start Now',
     imgUrl: images.photo04,
     alt: 'dog-4',
@@ -49,7 +49,7 @@ const infoObjs = [
 
 const aboutUs = {
   title: 'About Us',
-  desc: "North Beach Schuzthund Club is the perfect place for anyone interested in learning how to train their dog. The club provides a supportive and friendly environment for both owners and their dogs. We offer a variety of classes and activities such as basic obedience, agility, tricks, and more. Our trainers are knowledgeable and experienced, and we make sure to tailor the program to meet the individual needs of each dog and owner. We also provide helpful tips and advice on how to best care for your dog and how to develop a strong bond between you and your pet. The NBSC is a great place to start if you are looking to train your pup!"
+  desc: "North Beach Schutzhund Club is an incredible organization dedicated to promoting friendly camaraderie, healthy physical activity, and responsible dog ownership. Our members come from all walks of life, but what unites us is our love of dogs and the joy of playing with them. We host a variety of events, from picnics and barbecues to agility and flyball competitions. We also hold workshops and seminars on how to build a strong bond between dog and owner. Whether you're a seasoned pro or new to the sport of dog sports, you'll find something to love here. We strive to create an inclusive and supportive environment where everyone is welcome. So come join us, and let's have a great time!"
 }
 
 const events = {
@@ -65,8 +65,8 @@ const events = {
   }
 ]};
 
-const uscaData = { 
-  mainInfo: {
+const uscaData = [ 
+  {
     title: 'USCA SOUTHEAST REGIONAL CHAMPIONSHIP',
     images: [
       images.uscalogo
@@ -77,12 +77,12 @@ const uscaData = {
     'Titles Offered: BH, IGP 1-3, FH (full)',
     'Event Date: March 2-5, 2023'
   ]}, 
-  competitors: {
+  {
     title: 'Competitors',
     data: [
     'To be determined'
   ]}, 
-  trialField: {
+  {
     title: 'Trial Field',
     images: [
       images.arial01,
@@ -94,30 +94,30 @@ const uscaData = {
     'BH Schedule: Friday March 3 @ 9am - NBSC Field 9170 Hwy 90 Longs, SC 29568',
     'IGP Schedule: Sat/Sun March 4-5 @ 7am start (flights to be updated)'
   ]}, 
-  drawNight: {
+  {
     title: 'Draw Night',
     data: [
     'Address: Conway Sports & Fitness Center 1515 Mill Pond Rd. Conway, SC 29527',
     'Time: Immediately following general meeting and elections'
   ]},
-  helperTryOuts: {
+  {
     title: 'Helper Tryouts',
     data: [
     'Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527',
     'Time: Friday March 3, immediately following practice (approx. time will be updated)'
   ]},
-  tracking: {
+  {
     title: 'Tracking',
     data: [
     'Location and times: to be updated',
     'Surface: dirt or early winter wheat'
   ]},
-  hotelLodging: {
+  {
     title: 'Hotel Lodging',
     data: [
     'To be updated'
   ]},
-  application: {
+  {
     title: 'Application',
     links: [
       {
@@ -136,12 +136,12 @@ const uscaData = {
       }      
     ],
 },
-  sponsorsVendors: {
+  {
     title: 'Sponsors/Vendors',
     data: [
     'To be updated'
   ]},
-  trophies: {
+  {
     title: 'Trophies (and sponsorship pricing)',
     data: [
     'Regional Champion $150',
@@ -171,13 +171,13 @@ const uscaData = {
     'Helpers Favorite $60',
     'Sportsmanship Award $60'
   ]},
-  contactInfo: {
+  {
     title: 'Contact Information',
     data: [
     'North Beach Schutzhund Club',
     'jrchaires23@gmail.com'
   ]}
-};
+];
 
 const contactUs = {
   title_cu: 'Contact Us',
