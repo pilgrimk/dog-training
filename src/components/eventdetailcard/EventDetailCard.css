@@ -79,6 +79,13 @@
     padding: 0 0 0 20px;
 }
 
+.app__eventdetail_data_subtitle{
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-dark-cyan);
+}
+
 .app__eventdetail_link_text{
     color: blue;
     text-decoration: underline;

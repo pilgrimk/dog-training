@@ -50,12 +50,25 @@ const EventDetailCard = ({ event }) => {
                 {(event.data) &&
                     <div className='app__eventdetail_data'>
                         {event.data.map((item) =>
-                            <Typography
-                                key={shortid.generate()}
-                                className='app__eventdetail_data_text'
-                            >
-                                {item}
-                            </Typography>
+                            <React.Fragment key={shortid.generate()}>
+                                {(item.line_break) &&
+                                    <br />
+                                }
+                                {(item.data_subtitle) &&
+                                    <Typography
+                                        className='app__eventdetail_data_subtitle'
+                                    >
+                                        {item.data_subtitle}
+                                    </Typography>
+                                }
+                                {(item.line_item) &&
+                                    <Typography
+                                        className='app__eventdetail_data_text'
+                                    >
+                                        {item.line_item}
+                                    </Typography>
+                                }
+                            </React.Fragment>
                         )}
                     </div>
                 }

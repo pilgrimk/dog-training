@@ -72,15 +72,46 @@ const uscaData = [
       images.uscalogo
     ], 
     data: [
-    'Hosted by: North Beach Schuzthund Club',
-    'Judges: Bob Johantgen (stadium) & Nikki Banfield (tracking)',
-    'Titles Offered: BH, IGP 1-3, FH (full)',
-    'Event Date: March 2-5, 2023'
+      {line_item: "Hosted by: North Beach Schuzthund Club"},
+      {line_item: "Judges: Bob Johantgen (stadium) & Nikki Banfield (tracking)"},
+      {line_item: "Titles Offered: BH, IGP 1-3, FH (full)"},
+      {line_item: "Event Date: March 2-5, 2023"}
   ]}, 
   {
     title: 'Competitors',
     data: [
-    'To be determined'
+      {data_subtitle: "IGP3"},
+      {line_item: "Tom Kimball w. Jordan vom Tapferen Krieger"},
+      {line_item: "Megan Kersey w. Dirk vom Nordecker Hof"},
+      {line_item: "Gina Bishop w. Oreo vom Eisernen Kreuz"},
+      {line_item: "Jim Hill w. Perseus od Hradcanskeho Rybnika"},
+      {line_item: "Joe Galan w. Nicodemus von der Falsentadt"},
+      {line_item: "Benjamin Maez w. Yyatt vom Geistwasser"},
+      {line_item: "Sean Keeler w. Hondo von der Felsenstadt"},
+      {line_item: "Anne Dunton w. Bellatrix Athena Josephine von Duntonhaus"},
+      {line_item: "Robbie Dunton w. Red Barron von Duntonhaus"},
+      {line_item: "Rachel Taiclet w. X'Cayde von Fieldshaus"},
+      {line_item: "Brent Eckler w. Y' Maximus von Hanrahaus"},
+      {line_item: "Anna Duke w. Grim Reaper van het Bos"},
+      {line_item: "Tony Mcghee w. Oskar Leistung V Bora"},
+      {line_item: "Veit Bachmann w. Desert Eagle von der Feldweise"},
+      {line_item: "Kim Accashian w. Zuko von Zobelhond"},
+      {line_item: "Julie Lininger w. Gonso von Hugelblick"},
+      {line_break: " "},
+      {data_subtitle: "IGP2"},
+      {line_item: "William Viebahn w. J'Kaios vom Quellwasser"},
+      {line_break: " "},
+      {data_subtitle: "FH"},
+      {line_item: "Felicia Richardson w. Isabelle vom Haus Schair"},
+      {line_item: "JaQuasia Thompson w. Gigi von der Herzen Haus"},
+      {line_item: "Stanley Craddok w. Hamlyn von der Bosen Hoyle"},
+      {line_item: "Sue Birch"},
+      {line_item: "Rick Schair w. Ira vom Scwarzen Bar"},
+      {line_item: "Chris Bettin w. Ace von Schweizer"},
+      {line_item: "Allison Bentley w. Ethelwulf From The Southland"},
+      {line_item: "Cynthia DeSantis w. Skye"},
+      {line_item: "Jackie Camp w. Yankee von Kaltwasser"},
+      {line_item: "Karen Groh w. Falu vom Schloss Gymnich"}
   ]}, 
   {
     title: 'Trial Field',
@@ -90,32 +121,83 @@ const uscaData = [
     ],
     scrollImages: 'true',   
     data: [
-    'Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527',
-    'BH Schedule: Friday March 3 @ 9am - NBSC Field 9170 Hwy 90 Longs, SC 29568',
-    'IGP Schedule: Sat/Sun March 4-5 @ 7am start (flights to be updated)'
+      {line_item: "Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527"},
+      {line_item: "BH Schedule: Friday March 3 @ 9am - NBSC Field 9170 Hwy 90 Longs, SC 29568"},
+      {line_item: "IGP Schedule: Sat/Sun March 4-5 @ 7am start (flights to be updated)"}
   ]}, 
   {
     title: 'Draw Night',
     data: [
-    'Address: Conway Sports & Fitness Center 1515 Mill Pond Rd. Conway, SC 29527',
-    'Time: Immediately following general meeting and elections'
+      {line_item: "Address: Conway Sports & Fitness Center 1515 Mill Pond Rd. Conway, SC 29527"},
+      {line_item: "Time: Immediately following general meeting and elections"}
   ]},
   {
     title: 'Helper Tryouts',
     data: [
-    'Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527',
-    'Time: Friday March 3, immediately following practice (approx. time will be updated)'
+      {line_item: "Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527"},
+      {line_item: "Time: Friday March 3, immediately following practice (approx. time will be updated)"}
   ]},
   {
     title: 'Tracking',
+    images: [
+      images.tracking01,
+      images.tracking02,
+      images.tracking03
+    ], 
+    scrollImages: 'true',     
     data: [
-    'Location and times: to be updated',
-    'Surface: dirt or early winter wheat'
+      {line_item: "IGP and FH tracking will be on winter rye. There are no official tracking practice fields in the area. We very much appreciate the generosity of the farming property owner, he is allowing us to have ample acreage of this amazing condition to accommodate our trial."}
   ]},
   {
     title: 'Hotel Lodging',
     data: [
-    'To be updated'
+      {line_item: "Unfortunately there are not any pet friendly hotels in Conway. However, all the hotels listed confirmed it was ok to have dogs in cars/trailers in the parking lot. As always, please pick up after your dog. If you see someone missed picking up after theirs and you have an extra bag, do the right thing."},
+      {line_break: " "},
+      {line_break: " "},
+      {data_subtitle: "HOST HOTEL:"},
+      {line_break: ""},
+      {line_item: "Comfort Suites at the University"},
+      {line_item: "2480 Hwy 501 E"},
+      {line_item: "Conway, SC"},
+      {line_item: "A block of rooms has been set aside for $99 a night"},
+      {line_item: "Book rooms under 'Southeast Regional'"},
+      {line_item: "11 minutes from the venue (No dogs in rooms)"},
+      {line_break: " "},
+      {line_break: " "},
+      {data_subtitle: "OTHER NEARBY HOTELS:"},
+      {line_break: ""},
+      {line_item: "SureStay Hotel by Best Western"},
+      {line_item: "1004 Waccamaw Dr"},
+      {line_item: "Conway, SC"},
+      {line_item: "6 minutes from venue (parking lot is smaller, may be difficult for those pulling trailers)"},
+      {line_break: " "},
+      {line_item: "Quality Inn"},
+      {line_item: "3345 US-501"},
+      {line_item: "Conway, SC"},
+      {line_item: "6 minutes from venue"},
+      {line_break: " "},
+      {line_item: "Econo Lodge at the University"},
+      {line_item: "2376 US-501 Building B"},
+      {line_item: "Conway, SC"},
+      {line_item: "10 minutes from venue"},
+      {line_break: " "},
+      {line_item: "Econo Lodge at Church St."},
+      {line_item: "1101 Church St. #501"},
+      {line_item: "Conway, SC"},
+      {line_break: " "},
+      {line_item: "NOTE: Econo Lodge on Church St states that it is pet friendly. However, when we inquired, they stated that it had to be dogs under 35 lbs and their policy did not allow dogs to be in cars. So we would caution anyone from booking there."},
+      {line_break: " "},
+      {line_break: " "},
+      {data_subtitle: "HOTEL ALTERNATIVES:"},
+       {line_item: "RV / Travel Trailers:"},
+      {line_item: "Carolina Pines RV Resort"},
+      {line_item: "5800 SC-90"},
+      {line_item: "Conway, SC"},
+      {line_item: "It is a very nice resort and has great amenities. 21 minutes from the venue."},
+      {line_break: " "},
+      {line_break: " "},
+      {data_subtitle: "AIR BNB:"},
+      {line_item: "If you’re interested in AirBnB options then we recommend searching within Conway, SC. North Myrtle Beach, SC is about 35-40 minutes away from the venue and is a nice place to stay especially if you’re making this a beach vacation!"}
   ]},
   {
     title: 'Application',
@@ -144,38 +226,38 @@ const uscaData = [
   {
     title: 'Trophies (and sponsorship pricing)',
     data: [
-    'Regional Champion $150',
-    'IGP 3 1st place $75',
-    'IGP 3 2nd place $60',
-    'IGP 3 3rd place $60',
-    'IGP 3 4th place $60',
-    'IGP 3 5th place $60',
-    'FH Champion $75',
-    'FH 2nd place $60',
-    'FH 3rd place $60',
-    'IGP 2 Champion $75',
-    'IGP 2 2nd place $60',
-    'IGP 2 3rd place $60',
-    'IGP 1 Champion $75',
-    'IGP 1 2nd place $60',
-    'IGP 1 3rd place $60',
-    'High Tracking $60',
-    'High Obedience $60',
-    'High Protection $60',
-    'High HOT $60',
-    'High BHOT $60',
-    'High Scoring Female Dog $60',
-    'High Auslander $60',
-    'High Breed Survey Dog $60',
-    'High Scoring Club $60',
-    'Helpers Favorite $60',
-    'Sportsmanship Award $60'
+      {line_item: "Regional Champion $150"},
+      {line_item: "IGP 3 1st place $75"},
+      {line_item: "IGP 3 2nd place $60"},
+      {line_item: "IGP 3 3rd place $60"},
+      {line_item: "IGP 3 4th place $60"},
+      {line_item: "IGP 3 5th place $60"},
+      {line_item: "FH Champion $75"},
+      {line_item: "FH 2nd place $60"},
+      {line_item: "FH 3rd place $60"},
+      {line_item: "IGP 2 Champion $75"},
+      {line_item: "IGP 2 2nd place $60"},
+      {line_item: "IGP 2 3rd place $60"},
+      {line_item: "IGP 1 Champion $75"},
+      {line_item: "IGP 1 2nd place $60"},
+      {line_item: "IGP 1 3rd place $60"},
+      {line_item: "High Tracking $60"},
+      {line_item: "High Obedience $60"},
+      {line_item: "High Protection $60"},
+      {line_item: "High HOT $60"},
+      {line_item: "High BHOT $60"},
+      {line_item: "High Scoring Female Dog $60"},
+      {line_item: "High Auslander $60"},
+      {line_item: "High Breed Survey Dog $60"},
+      {line_item: "High Scoring Club $60"},
+      {line_item: "Helpers Favorite $60"},
+      {line_item: "Sportsmanship Award $60"}	
   ]},
   {
     title: 'Contact Information',
     data: [
-    'North Beach Schutzhund Club',
-    'jrchaires23@gmail.com'
+      {line_item: "North Beach Schutzhund Club"},
+      {line_item: "jrchaires23@gmail.com"}
   ]}
 ];
 

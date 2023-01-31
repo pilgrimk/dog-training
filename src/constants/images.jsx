@@ -5,6 +5,9 @@ import photo03 from '../assets/photo-3.jpg';
 import photo04 from '../assets/photo-4.jpg';
 import arial01 from '../assets/arial-field-map-OB.jpg';
 import arial02 from '../assets/arial-field-map-PR.jpg';
+import tracking01 from '../assets/tracking-1.jpg';
+import tracking02 from '../assets/tracking-2.jpg';
+import tracking03 from '../assets/tracking-3.jpg';
 import uscalogo from '../assets/USCA-logo.jpg';
 import defaultImg from '../assets/Dog.PNG';
 
@@ -16,6 +19,9 @@ const images = {
   photo04,
   arial01,
   arial02,
+  tracking01,
+  tracking02,
+  tracking03,
   uscalogo,
   defaultImg
 };
