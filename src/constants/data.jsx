@@ -189,7 +189,7 @@ const uscaData = [
       {line_break: " "},
       {line_break: " "},
       {data_subtitle: "HOTEL ALTERNATIVES:"},
-       {line_item: "RV / Travel Trailers:"},
+      {line_item: "RV / Travel Trailers:"},
       {line_item: "Carolina Pines RV Resort"},
       {line_item: "5800 SC-90"},
       {line_item: "Conway, SC"},
@@ -220,12 +220,23 @@ const uscaData = [
 },
   {
     title: 'Sponsors/Vendors',
+    images: [
+      images.sponsor01,
+      images.sponsor02,
+      images.sponsor03
+    ], 
+    scrollImages: 'true',     
     data: [
-    'To be updated'
+      {data_subtitle: "Vendors:"},
+      {line_item: "Sorenhaus K9 Supply"},
+      {line_item: "Black Dawg Studio"},
+      {line_item: "The K9 Development Center"}
   ]},
   {
     title: 'Trophies (and sponsorship pricing)',
     data: [
+      {line_item: "Trophies (and sponsorship pricing). Please email jrchaires23@gmail.com to sponsor any open trophy (specify which trophy you’d like to sponsor)"},
+      {line_break: " "},
       {line_item: "Regional Champion $150"},
       {line_item: "IGP 3 1st place $75"},
       {line_item: "IGP 3 2nd place $60"},
@@ -246,12 +257,12 @@ const uscaData = [
       {line_item: "High Protection $60"},
       {line_item: "High HOT $60"},
       {line_item: "High BHOT $60"},
-      {line_item: "High Scoring Female Dog $60"},
+      {line_item: "High Scoring Female Dog $60 – Sandy Reeves"},
       {line_item: "High Auslander $60"},
       {line_item: "High Breed Survey Dog $60"},
       {line_item: "High Scoring Club $60"},
-      {line_item: "Helpers Favorite $60"},
-      {line_item: "Sportsmanship Award $60"}	
+      {line_item: "Helpers Favorite $60 – Sommerfeld German Shepherds"},
+      {line_item: "Sportsmanship Award $60 – Blackfoot K9"}	
   ]},
   {
     title: 'Contact Information',
