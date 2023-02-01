@@ -48,10 +48,7 @@ const aboutUs = {
     images.gallery09,
     images.gallery10,
     images.gallery11,
-    images.gallery12,
-    images.gallery13,
-    images.gallery14,
-    images.gallery15
+    images.gallery12
   ],
   scrollImages: 'true',
   data: [

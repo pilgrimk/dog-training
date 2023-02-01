@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Grid, Paper, Typography } from '@mui/material'
+import { Grid, Paper } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { FaqDetailCard } from '../../components'
 import data from '../../constants/data'
