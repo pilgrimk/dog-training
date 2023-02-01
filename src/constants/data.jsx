@@ -8,7 +8,7 @@ const infoObjs = [
     description:
       "Sports Dog Clubs are organizations that promote activities for dogs and their owners to participate in together. They often host competitions, such as agility trials and scent work trials, as well as offering classes and other activities. Many of these clubs also provide educational opportunities and support to their members. They are often a great way for dog owners to meet and socialize with other dog owners, as well as learn new skills and have fun with their dogs.",
     // buttonLabel: 'Get Started',
-    imgUrl: images.photo01,
+    imgUrl: images.gallery13,
     alt: 'dog-1',
     reverse: 'false'
   },
@@ -18,7 +18,7 @@ const infoObjs = [
     headline: 'Schutzhund/ IGP',
     description:
       "IGP (stands for 'Internationale Gebrauchshunde Prüfungsordnung', German for 'International Working Dog Trial Regulations') is a three phase dog sport formerly known as Schutzhund/IPO that trials in tracking, obedience & protection. It was originally designed as a breed test for the German Shepherd Dog, but has grown into a popular sport that spans many breeds, as well as continuing to function as a breed test for many reputable German Shepherd breeders. At club training, we work together with our dogs and other members to train and prepare for IGP trials.",
-    imgUrl: images.photo02,
+    imgUrl: images.gallery14,
     alt: 'dog-2',
     reverse: 'true'
   },
@@ -28,7 +28,7 @@ const infoObjs = [
     headline: 'Benefits of training in IGP',
     description:
       "IGP will demand a great deal of time and money. This is not dog training. This is a commitment you make with your working dog for the majority of your dog’s life. By inquiring to train with us and potentially become a member, it is the club’s expectation that you learn and commit to the training required in the sport, you commit to continued attendance of club training days, and you commit to the finances required to maintain the health and well being of your dog (diet, sport equipment, vet appointments, etc..). By making this commitment, you and your dog will benefit well beyond the ability to trial and title within this sport. The bond you will have with your dog, and the heightened ability to communicate and train with your dog will accompany you in every aspect of your life together. Your dog will be better conditioned, have more agility, power, and endurance, and be more loyal and behaved due to better structure and boundaries. You will be a more confident dog handler, you will understand your dog’s needs better, and you will feel a sense of accomplishment from the hard work and long commitment you put towards this sport and its training.",
-    imgUrl: images.photo03,
+    imgUrl: images.gallery15,
     alt: 'dog-3',
     reverse: 'false'
   }
@@ -48,7 +48,10 @@ const aboutUs = {
     images.gallery09,
     images.gallery10,
     images.gallery11,
-    images.gallery12
+    images.gallery12,
+    images.gallery13,
+    images.gallery14,
+    images.gallery15
   ],
   scrollImages: 'true',
   data: [

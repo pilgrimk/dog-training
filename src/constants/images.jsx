@@ -23,6 +23,9 @@ import gallery09 from '../assets/gallery-9.jpg';
 import gallery10 from '../assets/gallery-10.jpg';
 import gallery11 from '../assets/gallery-11.jpg';
 import gallery12 from '../assets/gallery-12.jpg';
+import gallery13 from '../assets/gallery-13.jpg';
+import gallery14 from '../assets/gallery-14.jpg';
+import gallery15 from '../assets/gallery-15.jpg';
 import uscalogo from '../assets/USCA-logo.jpg';
 import defaultImg from '../assets/Dog.PNG';
 
@@ -52,6 +55,9 @@ const images = {
   gallery10,
   gallery11,
   gallery12,
+  gallery13,
+  gallery14,
+  gallery15,
   uscalogo,
   defaultImg
 };
