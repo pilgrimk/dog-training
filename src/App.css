@@ -156,6 +156,10 @@
     .p__opensans, .p__opensans_cap {
       font-size: 14px;
     }
+
+    .headtext__neuton {
+      font-size: 50px;
+    }    
   }
   
   @media screen and (max-width: 450px) {

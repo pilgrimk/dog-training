@@ -1,0 +1,17 @@
+.app__faq {
+    /* account for Navbar */
+    top: 79px;
+
+    position: relative;
+    padding: 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__faq-title {
+    font-size: 3rem;
+    color: var(--color-white);
+    padding: 20px;
+}

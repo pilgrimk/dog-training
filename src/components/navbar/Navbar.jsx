@@ -23,6 +23,12 @@ const Navbar = () => {
     });
   };
 
+  const handleNavigate = (anchor) => {
+    let link = '/' + anchor;
+    setToggleMenu(false);
+    navigate(link);
+  }
+
   const goToHomeAndScroll = async (anchor) => {
     //scroll to anchor is not working !!
     navigate('/home');
@@ -77,6 +83,13 @@ const Navbar = () => {
             </LinkS>
             <LinkS
               className='p__opensans app__navbar-link_item'
+              to='blank'
+              onClick={() => handleNavigate('FAQ')}
+            >
+              FAQ
+            </LinkS>            
+            <LinkS
+              className='p__opensans app__navbar-link_item'
               to='contact'
               onClick={() => handleScroll('contact')}
             >
@@ -129,6 +142,13 @@ const Navbar = () => {
                   >
                     About
                   </LinkS>
+                  <LinkS
+                    className='app__navbar-smallscreen_link_items'
+                    to='contact'
+                    onClick={() => handleNavigate('FAQ')}
+                  >
+                    FAQ
+                  </LinkS>                  
                   <LinkS
                     className='app__navbar-smallscreen_link_items'
                     to='contact'

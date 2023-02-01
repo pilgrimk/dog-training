@@ -1,0 +1,5 @@
+.app__faqdetail-title {
+    color: var(--color-cyan);
+    text-decoration: underline;
+    font-weight: bold;
+}

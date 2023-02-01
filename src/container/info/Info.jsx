@@ -9,15 +9,7 @@ const Info = () => {
       <div className='app__info-container'>
         {data.infoObjs.map((elem) => (
           <div className='app__info-container_item' key={elem.id}>
-            <InfoObject
-              title={elem.topLine}
-              header={elem.headline}
-              desc={elem.description}
-              buttonLabel={elem.buttonLabel}
-              url={elem.imgUrl}
-              alt={elem.alt}
-              reverse={elem.reverse}
-            />
+            <InfoObject infoItem={elem} />
           </div>
         ))}
       </div>

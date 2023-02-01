@@ -1,0 +1,7 @@
+.app__usca{
+    /* account for Navbar */
+    top: 79px;
+
+    position: relative;
+    padding: 2rem 2rem;
+}

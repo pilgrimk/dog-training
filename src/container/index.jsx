@@ -4,7 +4,8 @@ import Footer from './footer/Footer'
 import Home from './home/Home'
 import Info from './info/Info'
 import HeroSection from './herosection/HeroSection'
-import USCA from './events/usca/USCA'
+import USCA from './usca/USCA'
+import FAQ from './faq/FAQ'
 
 export {
   About,
@@ -13,5 +14,6 @@ export {
   Home,
   Info,
   HeroSection,
-  USCA
+  USCA,
+  FAQ
 };

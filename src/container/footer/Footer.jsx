@@ -27,9 +27,9 @@ const Footer = () => {
       <div className='app__footer-links'>
         <div className='app__footer-links_contact'>
           <h1 className="app__footer-headtext">{data.contactUs.title_cu}</h1>
-          <p className="p__opensans">{data.contactUs.addr}, {data.contactUs.city}, {data.contactUs.state_short} {data.contactUs.postal_code}, {data.contactUs.country}</p>
-          <p className="p__opensans">{data.contactUs.phone_1}</p>
-          <p className="p__opensans">{data.contactUs.phone_2}</p>
+          <p className="p__opensans">{data.contactUs.city}, {data.contactUs.state_short}, {data.contactUs.country}</p>
+          <p className="p__opensans">{data.contactUs.email_1}</p>
+          <p className="p__opensans">{data.contactUs.email_2}</p>
         </div>
 
         {(data.contactUs.social_media) &&
@@ -46,14 +46,6 @@ const Footer = () => {
             </div>
           </div>
         }
-
-        <div className='app__footer-links_work'>
-          <h1 className='app__footer-headtext'>{data.contactUs.title_wh}</h1>
-          <p className='p__opensans'>{data.contactUs.days_1}</p>
-          <p className='p__opensans'>{data.contactUs.hours_1}</p>
-          <p className='p__opensans'>{data.contactUs.days_2}</p>
-          <p className='p__opensans'>{data.contactUs.hours_2}</p>
-        </div>
       </div>
       <div className='footer__copyright'>
         <p className='p__opensans'>2022 {data.contactUs.name_short}. All Rights Reserved</p>

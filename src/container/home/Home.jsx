@@ -7,8 +7,8 @@ const Home = () => {
     <div className='app__home-container' id='home'>
         <HeroSection />
         <Info />
-        <Events />
         <About />
+        <Events />
         <Footer />
     </div>
   )
