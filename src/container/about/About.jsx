@@ -1,6 +1,5 @@
 import React from 'react'
-// import { CarouselStepper } from '../../components'
-import { WovenImageList } from '../../components'
+import { ImageMasonry } from '../../components'
 import data from '../../constants/data'
 import shortid from 'shortid'
 import './About.css'
@@ -22,7 +21,7 @@ const About = () => {
         )}
         {(data.aboutUs.images) &&
           <div className='app__about-image-container'>
-            <WovenImageList images={data.aboutUs.images} />
+            <ImageMasonry images={data.aboutUs.images} />
           </div>
         }
       </div>
