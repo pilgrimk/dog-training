@@ -16,8 +16,6 @@ function CarouselStepper({ images }) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
-  // const image_width = 400;
-  // const image_height = 255;
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -57,7 +55,7 @@ function CarouselStepper({ images }) {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
+                  // height: 255,
                   display: 'block',
                   maxWidth: 400,
                   overflow: 'hidden',

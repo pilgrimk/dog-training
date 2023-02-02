@@ -3,10 +3,10 @@ import images from './images';
 const infoObjs = [
   {
     id: 'info-1',
-    topLine: 'What is a sports dog club?',
-    headline: 'Sports Dog Club',
+    topLine: '',
+    headline: 'Welcome to North Beach Schutzhund Club',
     description:
-      "Sports Dog Clubs are organizations that promote activities for dogs and their owners to participate in together. They often host competitions, such as agility trials and scent work trials, as well as offering classes and other activities. Many of these clubs also provide educational opportunities and support to their members. They are often a great way for dog owners to meet and socialize with other dog owners, as well as learn new skills and have fun with their dogs.",
+      "We are a USCA club located in Longs, SC. We train in all three phases of Schutzhund/IGP and welcome all working dog breeds.  Please read through the information below and the FAQ menu at the top for more information on our club, the sport and our training philosophy.",
     // buttonLabel: 'Get Started',
     imgUrl: images.gallery13,
     alt: 'dog-1',
@@ -25,7 +25,7 @@ const infoObjs = [
   {
     id: 'info-3',
     topLine: '',
-    headline: 'Benefits of training in IGP',
+    headline: 'IGP Club Training',
     description:
       "IGP will demand a great deal of time and money. This is not dog training. This is a commitment you make with your working dog for the majority of your dog’s life. By inquiring to train with us and potentially become a member, it is the club’s expectation that you learn and commit to the training required in the sport, you commit to continued attendance of club training days, and you commit to the finances required to maintain the health and well being of your dog (diet, sport equipment, vet appointments, etc..). By making this commitment, you and your dog will benefit well beyond the ability to trial and title within this sport. The bond you will have with your dog, and the heightened ability to communicate and train with your dog will accompany you in every aspect of your life together. Your dog will be better conditioned, have more agility, power, and endurance, and be more loyal and behaved due to better structure and boundaries. You will be a more confident dog handler, you will understand your dog’s needs better, and you will feel a sense of accomplishment from the hard work and long commitment you put towards this sport and its training.",
     imgUrl: images.gallery15,
@@ -48,10 +48,7 @@ const aboutUs = {
     images.gallery09,
     images.gallery10,
     images.gallery11,
-    images.gallery12,
-    images.gallery13,
-    images.gallery14,
-    images.gallery15
+    images.gallery12
   ],
   scrollImages: 'true',
   data: [
