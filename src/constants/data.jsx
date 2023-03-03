@@ -251,7 +251,9 @@ const uscaData = [
       images.sponsor01,
       images.sponsor02,
       images.sponsor03,
-      images.sponsor04
+      images.sponsor04,
+      images.sponsor05,
+      images.sponsor06,
     ],
     scrollImages: 'true',
     data: [
@@ -263,6 +265,7 @@ const uscaData = [
       { data_subtitle: "Sponsors:" },
       { line_item: "Canine Performance Nutrition" },
       { line_item: "Hallmark K9" },
+      { line_item: "Ridgeside K9 Eastern Carolinas" },
       { line_break: " " },
       { data_subtitle: "Raffle Donations:" },
       { line_item: "All of the amazing companies listed above" },
