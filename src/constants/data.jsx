@@ -82,13 +82,20 @@ const uscaData = [
       { line_item: "Hosted by: North Beach Schuzthund Club" },
       { line_item: "Judges: Bob Johantgen (stadium) & Nikki Banfield (tracking)" },
       { line_item: "Titles Offered: BH, IGP 1-3, FH (full)" },
-      { line_item: "Event Date: March 2-5, 2023" }
+      { line_item: "Event Date: March 2-5, 2023" },
+      { line_item: "Stadium Photographer: Amanda’s Sportdog Photography"  }
     ]
   },
   {
     title: 'Competitors',
     data: [
-      { data_subtitle: "IGP3" },
+      { data_subtitle: "FH" },
+      { line_item: "Felicia Richardson/Isabelle vom Haus Schair" },
+      { line_item: "JaQuasia Thompson/Gigi von der Herzen Haus" },
+      { line_item: "Allison Bentley/ Ethelwulf From The Southland " },
+      { line_item: "Frank McEniry/Finn Vom Hilsblick" },
+      { line_break: " " },   
+      { data_subtitle: "IGP-3" },
       { line_item: "Tom Kimball w. Jordan vom Tapferen Krieger" },
       { line_item: "Megan Kersey w. Dirk vom Nordecker Hof" },
       { line_item: "Gina Bishop w. Oreo vom Eisernen Kreuz" },
@@ -96,30 +103,36 @@ const uscaData = [
       { line_item: "Joe Galan w. Nicodemus von der Falsentadt" },
       { line_item: "Benjamin Maez w. Yyatt vom Geistwasser" },
       { line_item: "Sean Keeler w. Hondo von der Felsenstadt" },
-      { line_item: "Anne Dunton w. Bellatrix Athena Josephine von Duntonhaus" },
       { line_item: "Robbie Dunton w. Red Barron von Duntonhaus" },
-      { line_item: "Rachel Taiclet w. X'Cayde von Fieldshaus" },
       { line_item: "Brent Eckler w. Y' Maximus von Hanrahaus" },
       { line_item: "Anna Duke w. Grim Reaper van het Bos" },
       { line_item: "Tony Mcghee w. Oskar Leistung V Bora" },
       { line_item: "Veit Bachmann w. Desert Eagle von der Feldweise" },
       { line_item: "Kim Accashian w. Zuko von Zobelhond" },
       { line_item: "Julie Lininger w. Gonso von Hugelblick" },
+      { line_item: "Gary McGillivary w. A'Vinci vom Eisernen Biss" },
+      { line_item: "JC Champagne w. Boit 'Sako' vom Marchberger" },
+      { line_item: "Justin Emery w. Aethelwulf von Hardison" },
+      { line_item: "Josh Lininger w. Dewil Moravia Kerberos" },
+      { line_item: "Clarissa Wood w. Arro Fatymona" },
+      { line_item: "Thomas Flood w. Vasco ze Stribrneho Kamene" },
+      { line_item: "Jacob Pope w. Forster von den Wannaer Hohen" },
+      { line_item: "Michele Lukic w. Mana vom Mack Zwinger" },
+      { line_item: "Ronny Burmer w. Bruno vom Burmeister" },
+      { line_item: "Fabian Walker w. Just Sarge vom Haus Schair" },
+      { line_item: "Erica Fryery w. Barley Fatymona" },
+      { line_item: "Chris Meverden w. Arik von der Snively Haus" },
+      { line_item: "Alex Alves w. Quando von Pentativa" },
+      { line_item: "John Landry w. Faro Blendy" },
+      { line_item: "Steve Liggens w. Ares von der Germanenquelle" },
+      { line_item: "Chris Meverden w. Judge vom Brickhaus" },    
       { line_break: " " },
-      { data_subtitle: "IGP2" },
+      { data_subtitle: "IGP-2" },
       { line_item: "William Viebahn w. J'Kaios vom Quellwasser" },
+      { line_item: "Amber Gentry w. Cypress Arrow's Hannibal Bennett" },
       { line_break: " " },
-      { data_subtitle: "FH" },
-      { line_item: "Felicia Richardson w. Isabelle vom Haus Schair" },
-      { line_item: "JaQuasia Thompson w. Gigi von der Herzen Haus" },
-      { line_item: "Stanley Craddok w. Hamlyn von der Bosen Hoyle" },
-      { line_item: "Sue Birch" },
-      { line_item: "Rick Schair w. Ira vom Scwarzen Bar" },
-      { line_item: "Chris Bettin w. Ace von Schweizer" },
-      { line_item: "Allison Bentley w. Ethelwulf From The Southland" },
-      { line_item: "Cynthia DeSantis w. Skye" },
-      { line_item: "Jackie Camp w. Yankee von Kaltwasser" },
-      { line_item: "Karen Groh w. Falu vom Schloss Gymnich" }
+      { data_subtitle: "IGP-1" },
+      { line_item: "Frank McEniry w. Fredyy Lengy" },
     ]
   },
   {
@@ -131,22 +144,22 @@ const uscaData = [
     scrollImages: 'true',
     data: [
       { line_item: "Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527" },
-      { line_item: "BH Schedule: Friday March 3 @ 9am - NBSC Field 9170 Hwy 90 Longs, SC 29568" },
-      { line_item: "IGP Schedule: Sat/Sun March 4-5 @ 7am start (flights to be updated)" }
+      { line_item: "FH Schedule: Friday March 3rd" },
+      { line_item: "IGP Schedule: Sat/Sun March 4th/5th" }
     ]
   },
   {
-    title: 'Draw Night',
+    title: 'General Meeting / Draw Night',
     data: [
       { line_item: "Address: Conway Sports & Fitness Center 1515 Mill Pond Rd. Conway, SC 29527" },
-      { line_item: "Time: Immediately following general meeting and elections" }
+      { line_item: "Regional Meeting: 5:00pm - Draw Night: 6:30pm"},
     ]
   },
   {
     title: 'Helper Tryouts',
     data: [
       { line_item: "Address: Conway Parks & Rec Fields 1717 Mill Pond Rd. Conway, SC 29527" },
-      { line_item: "Time: Friday March 3, immediately following practice (approx. time will be updated)" }
+      { line_item: "Time: Friday March 3rd @ 3:30pm" }
     ]
   },
   {
@@ -237,14 +250,24 @@ const uscaData = [
     images: [
       images.sponsor01,
       images.sponsor02,
-      images.sponsor03
+      images.sponsor03,
+      images.sponsor04
     ],
     scrollImages: 'true',
     data: [
       { data_subtitle: "Vendors:" },
       { line_item: "Sorenhaus K9 Supply" },
       { line_item: "Black Dawg Studio" },
-      { line_item: "The K9 Development Center" }
+      { line_item: "The K9 Development Center" },
+      { line_break: " " },
+      { data_subtitle: "Sponsors:" },
+      { line_item: "Canine Performance Nutrition" },
+      { line_item: "Hallmark K9" },
+      { line_break: " " },
+      { data_subtitle: "Raffle Donations:" },
+      { line_item: "All of the amazing companies listed above" },
+      { line_item: "Leashes by Lori" },
+      { line_item: "Fur Missile Designs" },         
     ]
   },
   {
@@ -252,32 +275,32 @@ const uscaData = [
     data: [
       { line_item: "Trophies (and sponsorship pricing). Please email jrchaires23@gmail.com to sponsor any open trophy (specify which trophy you’d like to sponsor)" },
       { line_break: " " },
-      { line_item: "Regional Champion $150" },
-      { line_item: "IGP 3 1st place $75" },
-      { line_item: "IGP 3 2nd place $60" },
+      { line_item: "Regional Champion $150 - Brick City Working Dog Club" },
+      { line_item: "IGP 3 1st place $75 - Coastal Carolina Schutzhund Club" },
+      { line_item: "IGP 3 2nd place $60 - Tom Kimball" },
       { line_item: "IGP 3 3rd place $60" },
       { line_item: "IGP 3 4th place $60" },
       { line_item: "IGP 3 5th place $60" },
-      { line_item: "FH Champion $75" },
-      { line_item: "FH 2nd place $60" },
-      { line_item: "FH 3rd place $60" },
+      { line_item: "FH Champion $75 - Megan Flynn" },
+      { line_item: "FH 2nd place $60 - Stanley Craddock" },
+      { line_item: "FH 3rd place $60 - Stanley Craddock" },
       { line_item: "IGP 2 Champion $75" },
       { line_item: "IGP 2 2nd place $60" },
       { line_item: "IGP 2 3rd place $60" },
-      { line_item: "IGP 1 Champion $75" },
+      { line_item: "IGP 1 Champion $75 - Central Alabama Schutzhund Club" },
       { line_item: "IGP 1 2nd place $60" },
       { line_item: "IGP 1 3rd place $60" },
-      { line_item: "High Tracking $60" },
-      { line_item: "High Obedience $60" },
-      { line_item: "High Protection $60" },
-      { line_item: "High HOT $60" },
-      { line_item: "High BHOT $60" },
-      { line_item: "High Scoring Female Dog $60 – Sandy Reeves" },
+      { line_item: "High Tracking $60 - Chris Bettin and Anna Duke" },
+      { line_item: "High Obedience $60 - Megan Kersey" },
+      { line_item: "High Protection $60 - OBX Working Dog Club" },
+      { line_item: "High HOT $60 - Nikki DeLuca, Ellyn Decker, Donovan Quesenberry" },
+      { line_item: "High BHOT $60 - Alison Bentley and Cheryl Ruddy Mathis" },
+      { line_item: "High Scoring Female Dog $60 - Sandy Reeves" },
       { line_item: "High Auslander $60" },
-      { line_item: "High Breed Survey Dog $60" },
+      { line_item: "High Breed Survey Dog $60 - anonymous" },
       { line_item: "High Scoring Club $60" },
-      { line_item: "Helpers Favorite $60 – Sommerfeld German Shepherds" },
-      { line_item: "Sportsmanship Award $60 – Blackfoot K9" }
+      { line_item: "Helpers Favorite $60 - Sommerfeld German Shepherds" },
+      { line_item: "Sportsmanship Award $60 - Blackfoot K9" }
     ]
   },
   {

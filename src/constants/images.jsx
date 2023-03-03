@@ -11,6 +11,7 @@ import tracking03 from '../assets/tracking-3.jpg';
 import sponsor01 from '../assets/sponsor-1.jpg';
 import sponsor02 from '../assets/sponsor-2.jpg';
 import sponsor03 from '../assets/sponsor-3.jpg';
+import sponsor04 from '../assets/sponsor-4.jpg';
 import gallery01 from '../assets/gallery-1.jpg';
 import gallery02 from '../assets/gallery-2.jpg';
 import gallery03 from '../assets/gallery-3.jpg';
@@ -43,6 +44,7 @@ const images = {
   sponsor01,
   sponsor02,
   sponsor03,
+  sponsor04,
   gallery01,
   gallery02,
   gallery03,
