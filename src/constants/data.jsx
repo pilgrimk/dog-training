@@ -385,7 +385,7 @@ const faqs = {
 
 const contactUs = {
   title_cu: 'Contact Us',
-  name_long: 'North Beach Schuzthund Club',
+  name_long: 'North Beach Schutzhund Club',
   name_short: 'NBSC',
   addr: "",
   city: 'Longs',
